@@ -14,7 +14,7 @@ MonoBehaviour:
   id: grayCipher
   title: Gray Cipher
   author: Sean Obach
-  description: 
+  description: https://github.com/obachs971/GrayCipher
   version: 1.0.0
   outputFolder: build
   previewImage: {fileID: 2800000, guid: 42678700b11c65e4d8284037f013a09a, type: 3}
