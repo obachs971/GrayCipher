@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1">
-    <title>Gray Cipher - Keep Talking and Nobody Explodes Module</title>
+    <title>Gray Cipher — Keep Talking and Nobody Explodes Module</title>
     <link rel="stylesheet" type="text/css" href="css/font.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -104,17 +104,17 @@
                     </tbody>
                 </table>
         <p>For each binary sequence, if the binary bit (middle screen) at the letter's position is a 1, invert the bits. Then run it through the scrambler so that the number in each position turns into that position of that number in the binary.</p>
-	<h4 style="text-align:center">Example</h4>
-	<p style="text-align:center">
-	Scrambler: 35124<br>
-	Binary: 10011<br>
-	3rd position of 10011 -> 0<br>
-	5th position of 10011 -> 1<br>
-	1st position of 10011 -> 1<br>
-	2nd position of 10011 -> 0<br>
-	4th position of 10011 -> 1<br>
-	10011 -> 01101
-	</p>
+    <h4 style="text-align:center">Example</h4>
+    <p style="text-align:center">
+    Scrambler: 35124<br>
+    Binary: 10011<br>
+    3rd position of 10011 -> 0<br>
+    5th position of 10011 -> 1<br>
+    1st position of 10011 -> 1<br>
+    2nd position of 10011 -> 0<br>
+    4th position of 10011 -> 1<br>
+    10011 -> 01101
+    </p>
         <p>Finally turn the binary back into a letter using the same table.</p>
     
         <h4 style="text-align:center">Example</h4>
@@ -130,7 +130,7 @@
         D -> 00100 + 0 -> 00100 + 54123 -> 00001 -> A <br>
         C -> 00011 + 1 -> 11100 + 54123 -> 00111 -> G<br>
         C -> 00011 + 0 -> 00011 + 54123 -> 11000 -> X<br>
-	New Encrypted Word: BLGAGX
+    New Encrypted Word: BLGAGX
         </p>
     </div>
             <div class="page-footer relative-footer">Page 2 of 5</div>
@@ -142,10 +142,10 @@
                 <span class="page-header-section-title">Gray Cipher</span>
             </div>
             <div class="page-content">   
-	<h3>Step 2: Columnar Transposition</h3>
+    <h3>Step 2: Columnar Transposition</h3>
             <p>For this, you will need the encrypted word from step 2 and the number on the bottom
                 screen of page 1.</p>
-	    <p>Take the numbers and underneathit, put 6 dashes so that it fits in the columns of the numbers in reading order.</p>
+        <p>Take the numbers and underneathit, put 6 dashes so that it fits in the columns of the numbers in reading order.</p>
             <table>
                 <tr>
                     <th>1</th>
@@ -223,14 +223,14 @@
                     <th>-</th>
                 </tr>
             </table>
-	    <p>In ascending order, take the encrypted word and replace all the dashes under the number with the letters.
+        <p>In ascending order, take the encrypted word and replace all the dashes under the number with the letters.
             </p>
             <p>Finally, read the letters in reading order to get a new order of letters.</p>
             <h4 style="text-align:center"> Example</h4>
             <p style="text-align:center">
-		Encrypted Word: BLGAGX<br>
-		Number: 321
-	    </p>
+        Encrypted Word: BLGAGX<br>
+        Number: 321
+        </p>
             <table>
                 <tr>
                     <th>3</th>
@@ -245,12 +245,12 @@
                 <tr>
                     <th>X</th>
                     <th>A</th>
-		    <th>L</th>
+            <th>L</th>
                 </tr>
             </table>
-	    <p style="text-align:center">
-		New Encrypted Word: GGBXAL
-	    </p>
+        <p style="text-align:center">
+        New Encrypted Word: GGBXAL
+        </p>
         <h3>Step 3: Portax Cipher</h3>
         <p>For this, you're going to need the encrypted word you got from step 2 and the 3 letter key on the top screen of page 2.</p>
         <p>You will also need this cipher table that consists of 4 rows of letters, divided into 2 subgroups of 2 rows:</p>
@@ -271,9 +271,9 @@
                 <span class="page-header-section-title">Gray Cipher</span>
             </div>
             <div class="page-content">
-	<p>Split the encrypted word in half so you have 2 3 letter strings. Place the 2nd half under the 1st half. Each column is treated like a letter pair reading top to bottom. For each letter pair, do the following:</p>
+    <p>Split the encrypted word in half so you have 2 3 letter strings. Place the 2nd half under the 1st half. Each column is treated like a letter pair reading top to bottom. For each letter pair, do the following:</p>
         <ul>
-	<li>Shift the top row so that the letter A aligns with the letter on the 3rd/4th row that is the same letter as the Nth letter of the key.</li>
+    <li>Shift the top row so that the letter A aligns with the letter on the 3rd/4th row that is the same letter as the Nth letter of the key.</li>
         <li>Find the 1st letter in the pair in the 1st/2nd row that is within the length of the top row.</li>
         <li>Find the 2nd letter in the pair in the 3rd/4th row that is within the length of the top row.</li>
         <li>If the 2 letters are in the same column, the 1st letter will be replaced with the letter in the 1st/2nd row and the 2nd letter will be replaced with the letter in the 3rd/4th row.</li>
@@ -286,17 +286,17 @@
         </p>
         <table>
         <tbody>
-		<tr>
-		<th>G</th><th>G</th><th>B</th>
-		</tr>
-		<tr>
-		<th>X</th><th>A</th><th>L</th>
-		</tr>
-	</tbody>
+        <tr>
+        <th>G</th><th>G</th><th>B</th>
+        </tr>
+        <tr>
+        <th>X</th><th>A</th><th>L</th>
+        </tr>
+    </tbody>
         </table>
-	<table class="alpha">
+    <table class="alpha">
         <tbody>
-        <tr><th class='corner' colspan='4'></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th><th>J</th><th>K</th><th>L</th><th>M</th><th class='corner' colspan='10'></th>
+        <tr><th class='corner' colspan='4'></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th><th>J</th><th>K</th><th>L</th><th>M</th><th class='corner' colspan='8'></th></tr>
         <tr><th>N</th><th>O</th><th>P</th><th>Q</th><th>R</th><th>S</th><th>T</th><th>U</th><th>V</th><th>W</th><th>X</th><th>Y</th><th>Z</th><th>N</th><th>O</th><th>P</th><th>Q</th><th>R</th><th>S</th><th>T</th><th>U</th><th>V</th><th>W</th><th>X</th><th>Y</th></tr>
         <tr><th class='corner' colspan='25'></th></tr>
         <tr><th>A</th><th>C</th><th>E</th><th>G</th><th>I</th><th>K</th><th>M</th><th>O</th><th>Q</th><th>S</th><th>U</th><th>W</th><th>Y</th><th>A</th><th>C</th><th>E</th><th>G</th><th>I</th><th>K</th><th>M</th><th>O</th><th>Q</th><th>S</th><th>U</th><th>W</th></tr>
@@ -304,19 +304,19 @@
         </tbody>
         </table>
         <p style="text-align:center">
-        	GX-> HV
+            GX-> HV
         </p>
-	<table class="alpha">
+    <table class="alpha">
         <tbody>
-        <tr><th class='corner' colspan='9'></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th><th>J</th><th>K</th><th>L</th><th>M</th><th class='corner' colspan='10'></th>
+        <tr><th class='corner' colspan='9'></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th><th>J</th><th>K</th><th>L</th><th>M</th><th class='corner' colspan='3'></th>
         <tr><th>N</th><th>O</th><th>P</th><th>Q</th><th>R</th><th>S</th><th>T</th><th>U</th><th>V</th><th>W</th><th>X</th><th>Y</th><th>Z</th><th>N</th><th>O</th><th>P</th><th>Q</th><th>R</th><th>S</th><th>T</th><th>U</th><th>V</th><th>W</th><th>X</th><th>Y</th></tr>
         <tr><th class='corner' colspan='25'></th></tr>
         <tr><th>A</th><th>C</th><th>E</th><th>G</th><th>I</th><th>K</th><th>M</th><th>O</th><th>Q</th><th>S</th><th>U</th><th>W</th><th>Y</th><th>A</th><th>C</th><th>E</th><th>G</th><th>I</th><th>K</th><th>M</th><th>O</th><th>Q</th><th>S</th><th>U</th><th>W</th></tr>
         <tr><th>B</th><th>D</th><th>F</th><th>H</th><th>J</th><th>L</th><th>N</th><th>P</th><th>R</th><th>T</th><th>V</th><th>X</th><th>Z</th><th>B</th><th>D</th><th>F</th><th>H</th><th>J</th><th>L</th><th>N</th><th>P</th><th>R</th><th>T</th><th>V</th><th>X</th></tr>
         </tbody>
         </table>
-	<p style="text-align:center">
-        	GA-> EE
+    <p style="text-align:center">
+            GA-> EE
         </p>
     </div>
             <div class="page-footer relative-footer">Page 4 of 5</div>
@@ -328,36 +328,37 @@
                 <span class="page-header-section-title">Gray Cipher</span>
             </div>
             <div class="page-content">
-	<table class="alpha">
+    <table class="alpha">
         <tbody>
-        <tr><th class='corner' colspan='5'></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th><th>J</th><th>K</th><th>L</th><th>M</th><th class='corner' colspan='10'></th>
+        <tr><th class='corner' colspan='5'></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th><th>J</th><th>K</th><th>L</th><th>M</th><th class='corner' colspan='7'></th>
         <tr><th>N</th><th>O</th><th>P</th><th>Q</th><th>R</th><th>S</th><th>T</th><th>U</th><th>V</th><th>W</th><th>X</th><th>Y</th><th>Z</th><th>N</th><th>O</th><th>P</th><th>Q</th><th>R</th><th>S</th><th>T</th><th>U</th><th>V</th><th>W</th><th>X</th><th>Y</th></tr>
         <tr><th class='corner' colspan='25'></th></tr>
         <tr><th>A</th><th>C</th><th>E</th><th>G</th><th>I</th><th>K</th><th>M</th><th>O</th><th>Q</th><th>S</th><th>U</th><th>W</th><th>Y</th><th>A</th><th>C</th><th>E</th><th>G</th><th>I</th><th>K</th><th>M</th><th>O</th><th>Q</th><th>S</th><th>U</th><th>W</th></tr>
         <tr><th>B</th><th>D</th><th>F</th><th>H</th><th>J</th><th>L</th><th>N</th><th>P</th><th>R</th><th>T</th><th>V</th><th>X</th><th>Z</th><th>B</th><th>D</th><th>F</th><th>H</th><th>J</th><th>L</th><th>N</th><th>P</th><th>R</th><th>T</th><th>V</th><th>X</th></tr>
         </tbody>
         </table>
-	<p style="text-align:center">
-        	BL-> AN
+    <p style="text-align:center">
+            BL-> AN
         </p>
-	<table>
+    <table>
         <tbody>
-		<tr>
-		<th>H</th><th>E</th><th>A</th>
-		</tr>
-		<tr>
-		<th>V</th><th>E</th><th>N</th>
-		</tr>
-	</tbody>
+        <tr>
+        <th>H</th><th>E</th><th>A</th>
+        </tr>
+        <tr>
+        <th>V</th><th>E</th><th>N</th>
+        </tr>
+    </tbody>
         </table>
-	<p style="text-align:center">
-        	Decrypted Word: HEAVEN
+    <p style="text-align:center">
+            Decrypted Word: HEAVEN
         </p>
-	<p>Once you finally have your decrypted word, you can submit it. Once you start typing, all the screens will go black and the bottom screen will show what you are typing. </p>
+    <p>Once you finally have your decrypted word, you can submit it. Once you start typing, all the screens will go black and the bottom screen will show what you are typing. </p>
         <p>To clear it, just click one of the arrows. This goes to one of the pages and clears any input you put in. It will not let you go over 6 letters on input. </p>
         <p>Once you are satisfied with your input, press the button labeled "SUB" to submit your answer. On a strike, the module will go back to the first page of the module, but it does not regenerate.</p>
     </div>
             <div class="page-footer relative-footer">Page 5 of 5</div>
         </div>
+    </div>
 </body>
 </html>

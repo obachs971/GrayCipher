@@ -284,7 +284,7 @@ public class ultimateCipher : MonoBehaviour {
               "35214", "35412", "43512", "45213", "53412", "54213", "24531",
               "25431", "34521", "35421", "43251", "43521", "45231", "53421",
               "54231"
-    };
+            };
         List<string> binary = new List<string>(){
             "00001", "00010", "00011", "00100", "00101", "00110", "00111",
             "01000", "01001", "01010", "01011", "01100", "01101", "01110",
@@ -293,7 +293,7 @@ public class ultimateCipher : MonoBehaviour {
          };
         string scrambler = scramblers[order.IndexOf(Bomb.GetSerialNumber()[0])];
         string binarytrue = "" ;
-        Debug.LogFormat("[Gray Cipher #{0} ] Scrambler: {1}", moduleId, scrambler);
+        Debug.LogFormat("[Gray Cipher #{0}] Scrambler: {1}", moduleId, scrambler);
         for (int aa = 0; aa < 6; aa++)
         { 
             string binarylet = binary[p7alphabet.IndexOf(word[aa])];
@@ -319,7 +319,7 @@ public class ultimateCipher : MonoBehaviour {
                     binarytrue = binarytrue + "0";
             }
             encrypt = encrypt + "" + p7alphabet[binary.IndexOf(convbin)];
-            Debug.LogFormat("[Gray Cipher #{0} ] {1} -> {2} + {3} -> {4} -> {5}", moduleId, word[aa], binarylet, binarytrue[aa], convbin, encrypt[aa]);
+            Debug.LogFormat("[Gray Cipher #{0}] {1} -> {2} + {3} -> {4} -> {5}", moduleId, word[aa], binarylet, binarytrue[aa], convbin, encrypt[aa]);
         }
         pages[0][1] = binarytrue;
         return encrypt;
